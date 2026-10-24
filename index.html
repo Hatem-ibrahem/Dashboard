@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="app">
+        <header class="footer">
+            <div class="prtfolio">
+                <div class="icon">
+                    <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+                        <rect width="28" height="28" rx="7" fill="#0F1B2D"/>
+                        <path d="M6 19l5-5 4 3 7-8" fill="none" stroke="#5EB8AE" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <p>prtfolio</p>
+            </div>
+            <nav class="data">
+                <a href="#" class="Active">Dashboard</a>
+                <a href="#">Holdings</a>
+                <a href="#">Transaction</a>
+                <a href="#">Reports</a>
+            </nav>
+            
+            <button class="btn-primary">+ Add transaction</button>
+        </header>
+        <div class="page-head">
+            <div>
+                <h1>Portfolio overview</h1>
+                <p>Sample data for design purposes</p>
+            </div>
+            <div class="rang" role="group" aria-label="Time range">
+                <button class="Active">1M</button>                
+                <button>6M</button>                
+                <button>1Y</button>                
+                <button>ALL</button>                
+            </div>
+        </div>
+        <section class="Kpis">
+            <div class="Kpi dark">
+                <div class="Kpi-lapel">Total portfolio value</div>
+                <div class="Kpi-value">2,450,000 <span class="unit"> EGP </span></div>
+            </div>
+            
+            <div class="Kpi">
+                <div class="Kpi-lapel">Total profit / loss</div>
+                <div class="Kpi-value pos"> ▲ 312,400 <span class="unit">EGP </span></div>
+                <div class="Kpi-sub">Up 14.6%</div>
+            </div>
+            <div class="Kpi">
+                <div class="Kpi-lapel">Monthly return</div>
+                <div class="Kpi-value pos"> ▲ 2.3%</div>
+                <div class="Kpi-sub">vs. previous month</div>
+            </div>
+            <div class="Kpi">
+                <div class="Kpi-lapel">Available cash</div>
+                <div class="Kpi-value">122,500 <span class="unit">EGP </span></div>
+                <div class="Kpi-sub">5% of portfolio</div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="panel">
+                <h2>Portfolio performance</h2>
+                <svg class="chart-line" viewBox="0 0 600 220" preserveAspectRatio="none" role="img"
+                        aria-label="Line chart showing portfolio value rising over the selected period">
+                    <g stroke="#E3E7ED" stroke-width="1" vector-effect="non-scaling-stroke">
+                        <line x1="0" y1="50" x2="600" y2="50"/>
+                        <line x1="0" y1="110" x2="600" y2="110"/>
+                        <line x1="0" y1="170" x2="600" y2="170"/>
+                    </g>
+                    <path d="M0 170 L60 160 L120 165 L180 140 L240 145 L300 115 L360 120 L420 90 L480 80 L540 60 L600 40 L600 220 L0 220 Z"
+                        fill="#0F766E" fill-opacity="0.12"/>
+                    <path d="M0 170 L60 160 L120 165 L180 140 L240 145 L300 115 L360 120 L420 90 L480 80 L540 60 L600 40"
+                        fill="none" stroke="#0F766E" stroke-width="2.5" stroke-linejoin="round"
+                        vector-effect="non-scaling-stroke"/>
+                </svg>
+            </div>
+            <div class=" panel--side">
+                <h2>Asset allocation</h2>
+                <div class="donut-wrap">
+                    <svg width="170" height="170" viewBox="0 0 170 170" role="img"
+                            aria-label="Donut chart of allocation: stocks 40%, funds 25%, fixed income 20%, gold 10%, cash 5%">
+                        <g transform="rotate(-90 85 85)" fill="none" stroke-width="26">
+                            <circle cx="85" cy="85" r="70" stroke="#0F1B2D" stroke-dasharray="175.9 439.8" stroke-dashoffset="0"/>
+                            <circle cx="85" cy="85" r="70" stroke="#0F766E" stroke-dasharray="110 439.8"   stroke-dashoffset="-175.9"/>
+                            <circle cx="85" cy="85" r="70" stroke="#7CC7BD" stroke-dasharray="88 439.8"    stroke-dashoffset="-285.9"/>
+                            <circle cx="85" cy="85" r="70" stroke="#E0A526" stroke-dasharray="44 439.8"    stroke-dashoffset="-373.9"/>
+                            <circle cx="85" cy="85" r="70" stroke="#AEB7C4" stroke-dasharray="22 439.8"    stroke-dashoffset="-417.9"/>
+                        </g>
+                    </svg>
+                </div>
+                <ul class="legend">
+                    <li><span class="swatch swatch--stocks"></span><span>Stocks</span><span>40%</span></li>
+                    <li><span class="swatch swatch--funds"></span><span>Investment funds</span><span>25%</span></li>
+                    <li><span class="swatch swatch--fixed"></span><span>Fixed income</span><span>20%</span></li>
+                    <li><span class="swatch swatch--gold"></span><span>Gold</span><span>10%</span></li>
+                    <li><span class="swatch swatch--cash"></span><span>Cash</span><span>5%</span></li>
+                    
+                </ul>
+            </div>
+            
+
+        </section>
+
+                <section class="row">
+           
+            <div class="panel">
+                <div class="head">
+                    <h2>Holdings</h2>
+                    <a href="#">View all holdings</a>
+                </div>
+                <div class="table-scrall">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Asset</th>
+                                <th>Category</th>
+                                <th>Value (EGP)</th>
+                                <th>Weight</th>
+                                <th>Return</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Banking sector stocks</td>
+                                <td>Stocks</td>
+                                <td>420,000</td>
+                                <td>17.1%</td>
+                                <td>▲ 18.2%</td>
+                            </tr>
+                            <tr>
+                                <td>Banking sector stocks</td>
+                                <td>Stocks</td>
+                                <td>420,000</td>
+                                <td>17.1%</td>
+                                <td>▲ 18.2%</td>
+                            </tr>
+                            <tr>
+                                <td>Telecom sector stocks</td>
+                                <td>Stocks</td>
+                                <td>250,000</td>
+                                <td>10.2%</td>
+                                <td>▼ 3.1%</td>
+                            </tr>
+                            <tr>
+                                <td>Telecom sector stocks</td>
+                                <td>Stocks</td>
+                                <td>250,000</td>
+                                <td>10.2%</td>
+                                <td>▼ 3.1%</td>
+                            </tr>
+                            <tr>
+                                <td>Telecom sector stocks</td>
+                                <td>Stocks</td>
+                                <td>250,000</td>
+                                <td>10.2%</td>
+                                <td>▼ 3.1%</td>
+                            </tr>
+                            <tr>
+                                <td>Telecom sector stocks</td>
+                                <td>Stocks</td>
+                                <td>250,000</td>
+                                <td>10.2%</td>
+                                <td>▼ 3.1%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="panel--side ">
+                <div class="head">
+                    <p>Recent transactions</p>
+                    <a href="#">View all</a>
+                </div>
+                <ul>
+                    <li class="tx">
+                        <div>
+                            <div class="tx-title">Buy · Banking sector stocks</div>
+                            <div class="tx-time">2 days ago</div>
+                        </div>
+                        <div class="tx-amount">− 50,000</div>
+                    </li>
+                    <li class="tx">
+                        <div>
+                            <div class="tx-title">Dividend · Diversified fund</div>
+                            <div class="tx-time">5 days ago</div>
+                        </div>
+                        <div class="tx-amount pos">+ 8,200</div>
+                    </li>
+                    <li class="tx">
+                        <div>
+                            <div class="tx-title">Sell · Telecom sector stocks</div>
+                            <div class="tx-time">1 weeks ago</div>
+                        </div>
+                        <div class="tx-amount pos">+ 30,000</div>
+                    </li>
+                    <li class="tx">
+                        <div>
+                            <div class="tx-title">Cash deposit</div>
+                            <div class="tx-time">2 weeks ago</div>
+                        </div>
+                        <div class="tx-amount pos">+ 100,000</div>
+                    </li>
+                </ul>
+
+            </div> 
+            
+        </section>
+    </div>
+
+</body>
+</html>
+
